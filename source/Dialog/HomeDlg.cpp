@@ -51,7 +51,7 @@ END_MESSAGE_MAP()
 
 
 CHomeDlg::CHomeDlg(CWnd* pParent /*=nullptr*/)
-	: CDialogEx(IDD_SCHOOLDATABASE_DIALOG, pParent)
+	: CDialogEx(IDD_HOME_DIALOG, pParent)
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
@@ -100,6 +100,24 @@ BOOL CHomeDlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// Set small icon
 
 	// TODO: Add extra initialization here
+	CFont font;
+	font.CreateFont(
+		12,                        // nHeight
+		0,                         // nWidth
+		0,                         // nEscapement
+		0,                         // nOrientation
+		FW_NORMAL,                 // nWeight
+		FALSE,                     // bItalic
+		FALSE,                     // bUnderline
+		0,                         // cStrikeOut
+		ANSI_CHARSET,              // nCharSet
+		OUT_DEFAULT_PRECIS,        // nOutPrecision
+		CLIP_DEFAULT_PRECIS,       // nClipPrecision
+		DEFAULT_QUALITY,           // nQuality
+		DEFAULT_PITCH | FF_SWISS,  // nPitchAndFamily
+		_T("Arial"));              // lpszFacename
+
+	GetDlgItem(IDC_TEXT_TITLE)->SetFont(&font);
 
 	return TRUE;  // return TRUE  unless you set the focus to a control
 }

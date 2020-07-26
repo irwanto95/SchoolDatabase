@@ -14,7 +14,7 @@ public:
 
 // Dialog Data
 #ifdef AFX_DESIGN_TIME
-	enum { IDD = IDD_SCHOOLDATABASE_DIALOG };
+	enum { IDD = IDD_HOME_DIALOG };
 #endif
 
 	protected:
