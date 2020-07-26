@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{515f3fe6-fb97-420e-a154-f3b357b58d17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{a2c1080c-6397-42f2-8481-124b1e7d32bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{a89dbb69-0df9-4e7c-bb8a-1f97c2f6db68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\res">
+      <UniqueIdentifier>{a0fad679-4f5f-471d-b093-96fe4e4658a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Dialog">
+      <UniqueIdentifier>{4a2c61f6-3ef4-4b13-91fd-3a404dbaf77d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Dialog">
+      <UniqueIdentifier>{835aa43d-92aa-40d2-9724-afa2f4a70585}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\resource\resource.h">
+      <Filter>resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\resource\targetver.h">
+      <Filter>resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Dialog\SchoolDatabaseDlg.h">
+      <Filter>include\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\framework.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\pch.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SchoolDatabase.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\resource\SchoolDatabase.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\resource\res\SchoolDatabase.ico">
+      <Filter>resource\res</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\resource\res\SchoolDatabase.rc2">
+      <Filter>resource\res</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\Dialog\SchoolDatabaseDlg.cpp">
+      <Filter>source\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\pch.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SchoolDatabase.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
