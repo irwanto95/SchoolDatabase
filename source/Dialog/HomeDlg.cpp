@@ -1,11 +1,11 @@
 
-// SchoolDatabaseDlg.cpp : implementation file
+// HomeDlg.cpp : implementation file
 //
 
 #include "pch.h"
 #include "framework.h"
 #include "SchoolDatabase.h"
-#include "SchoolDatabaseDlg.h"
+#include "HomeDlg.h"
 #include "afxdialogex.h"
 
 #ifdef _DEBUG
@@ -46,31 +46,31 @@ BEGIN_MESSAGE_MAP(CAboutDlg, CDialogEx)
 END_MESSAGE_MAP()
 
 
-// CSchoolDatabaseDlg dialog
+// CHomeDlg dialog
 
 
 
-CSchoolDatabaseDlg::CSchoolDatabaseDlg(CWnd* pParent /*=nullptr*/)
+CHomeDlg::CHomeDlg(CWnd* pParent /*=nullptr*/)
 	: CDialogEx(IDD_SCHOOLDATABASE_DIALOG, pParent)
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
 
-void CSchoolDatabaseDlg::DoDataExchange(CDataExchange* pDX)
+void CHomeDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
 }
 
-BEGIN_MESSAGE_MAP(CSchoolDatabaseDlg, CDialogEx)
+BEGIN_MESSAGE_MAP(CHomeDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
 END_MESSAGE_MAP()
 
 
-// CSchoolDatabaseDlg message handlers
+// CHomeDlg message handlers
 
-BOOL CSchoolDatabaseDlg::OnInitDialog()
+BOOL CHomeDlg::OnInitDialog()
 {
 	CDialogEx::OnInitDialog();
 
@@ -104,7 +104,7 @@ BOOL CSchoolDatabaseDlg::OnInitDialog()
 	return TRUE;  // return TRUE  unless you set the focus to a control
 }
 
-void CSchoolDatabaseDlg::OnSysCommand(UINT nID, LPARAM lParam)
+void CHomeDlg::OnSysCommand(UINT nID, LPARAM lParam)
 {
 	if ((nID & 0xFFF0) == IDM_ABOUTBOX)
 	{
@@ -121,7 +121,7 @@ void CSchoolDatabaseDlg::OnSysCommand(UINT nID, LPARAM lParam)
 //  to draw the icon.  For MFC applications using the document/view model,
 //  this is automatically done for you by the framework.
 
-void CSchoolDatabaseDlg::OnPaint()
+void CHomeDlg::OnPaint()
 {
 	if (IsIconic())
 	{
@@ -148,7 +148,7 @@ void CSchoolDatabaseDlg::OnPaint()
 
 // The system calls this function to obtain the cursor to display while the user drags
 //  the minimized window.
-HCURSOR CSchoolDatabaseDlg::OnQueryDragIcon()
+HCURSOR CHomeDlg::OnQueryDragIcon()
 {
 	return static_cast<HCURSOR>(m_hIcon);
 }

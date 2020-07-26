@@ -27,9 +27,6 @@
     <ClInclude Include="..\resource\targetver.h">
       <Filter>resource</Filter>
     </ClInclude>
-    <ClInclude Include="..\source\Dialog\SchoolDatabaseDlg.h">
-      <Filter>include\Dialog</Filter>
-    </ClInclude>
     <ClInclude Include="..\source\framework.h">
       <Filter>include</Filter>
     </ClInclude>
@@ -38,6 +35,9 @@
     </ClInclude>
     <ClInclude Include="..\source\SchoolDatabase.h">
       <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Dialog\HomeDlg.h">
+      <Filter>include\Dialog</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -56,14 +56,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\source\Dialog\SchoolDatabaseDlg.cpp">
-      <Filter>source\Dialog</Filter>
-    </ClCompile>
     <ClCompile Include="..\source\pch.cpp">
       <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="..\source\SchoolDatabase.cpp">
       <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Dialog\HomeDlg.cpp">
+      <Filter>source\Dialog</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

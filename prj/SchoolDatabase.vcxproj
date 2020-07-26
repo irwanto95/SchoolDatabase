@@ -21,7 +21,7 @@
   <ItemGroup>
     <ClInclude Include="..\resource\resource.h" />
     <ClInclude Include="..\resource\targetver.h" />
-    <ClInclude Include="..\source\Dialog\SchoolDatabaseDlg.h" />
+    <ClInclude Include="..\source\Dialog\HomeDlg.h" />
     <ClInclude Include="..\source\framework.h" />
     <ClInclude Include="..\source\pch.h" />
     <ClInclude Include="..\source\SchoolDatabase.h" />
@@ -36,7 +36,7 @@
     <None Include="..\resource\res\SchoolDatabase.rc2" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\source\Dialog\SchoolDatabaseDlg.cpp" />
+    <ClCompile Include="..\source\Dialog\HomeDlg.cpp" />
     <ClCompile Include="..\source\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>

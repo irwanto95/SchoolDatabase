@@ -1,16 +1,16 @@
 
-// SchoolDatabaseDlg.h : header file
+// HomeDlg.h : header file
 //
 
 #pragma once
 
 
-// CSchoolDatabaseDlg dialog
-class CSchoolDatabaseDlg : public CDialogEx
+// CHomeDlg dialog
+class CHomeDlg : public CDialogEx
 {
 // Construction
 public:
-	CSchoolDatabaseDlg(CWnd* pParent = nullptr);	// standard constructor
+	CHomeDlg(CWnd* pParent = nullptr);	// standard constructor
 
 // Dialog Data
 #ifdef AFX_DESIGN_TIME
