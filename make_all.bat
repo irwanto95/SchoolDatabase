@@ -1,4 +1,4 @@
-pushd makes
+pushd make
 
 call make_externals.bat
 
