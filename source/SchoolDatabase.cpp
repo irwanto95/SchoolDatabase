@@ -71,6 +71,12 @@ BOOL SchoolDatabaseApp::InitInstance()
 	// such as the name of your company or organization
 	SetRegistryKey(_T("Local AppWizard-Generated Applications"));
 
+	xlnt::path file("../resource/texts/SDTexts.xls");
+	if (file.exists())
+	{
+		xlnt::workbook wb(file);
+	}
+
 	CHomeDlg dlg;
 	m_pMainWnd = &dlg;
 	INT_PTR nResponse = dlg.DoModal();
