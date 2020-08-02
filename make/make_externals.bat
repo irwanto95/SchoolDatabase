@@ -6,39 +6,10 @@ echo ===========================================================
 
 set DEST_FOLDER=%~dp0\..\extern
 
-
-REM echo ===========================================================
-echo Making externals .. mufise
-echo .
-set CONTAINER=mufise
-set TAG=%CONTAINER%.tag
-set URL=https://github.com/irwanto95/mufise.git/trunk/mufise
-pause
-if  not exist %DEST_FOLDER%\%TAG% (
-	break > %DEST_FOLDER%\%TAG%
-
-	svn propset svn:externals "%CONTAINER% %URL%" %DEST_FOLDER%
-	svn ci -m "Set externals"
-)
-
-REM echo ===========================================================
-echo Making externals .. libxls
-echo .
-set CONTAINER=libxls
-set TAG=%CONTAINER%.tag
-set URL=https://github.com/libxls/libxls.git//releases/tag/v1.5.3
-pause
-
-if  not exist %DEST_FOLDER%\%TAG% (
-	break > %DEST_FOLDER%\%TAG%
-
-	svn propset svn:externals "%CONTAINER% %URL%" %DEST_FOLDER%
-	svn ci -m "Set externals"
-)
-
-REM echo ===========================================================
-echo Update folder .. %DEST_FOLDER%
+svn propset svn:externals -F externals.list %DEST_FOLDER%
 svn update %DEST_FOLDER%
 
 echo .
+echo .
 echo Making externals all done
+echo ===========================================================
