@@ -518,9 +518,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\Projects\Apps_Win\SchoolDatabase\trunk\extern\xlnt\source\CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <Object Include="D:\Projects\Apps_Win\SchoolDatabase\trunk\extern\_prj\xlnt\source\third-party\libstudxml\libstudxml.dir\$(Configuration)\parser.obj">
       <Filter>Object Libraries</Filter>
     </Object>

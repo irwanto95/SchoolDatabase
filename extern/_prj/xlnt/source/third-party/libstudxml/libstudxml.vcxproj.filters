@@ -83,9 +83,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\Projects\Apps_Win\SchoolDatabase\trunk\extern\xlnt\third-party\libstudxml\CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <Filter Include="Header Files">
       <UniqueIdentifier>{7109C04C-2B88-3878-AABD-E99546DB2206}</UniqueIdentifier>
     </Filter>

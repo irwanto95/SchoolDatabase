@@ -272,62 +272,6 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\Projects\Apps_Win\SchoolDatabase\trunk\extern\xlnt\source\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Projects/Apps_Win/SchoolDatabase/trunk/extern/xlnt/source/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-C:\Developer\cmake\bin\cmake.exe -SD:/Projects/Apps_Win/SchoolDatabase/trunk/extern/xlnt -BD:/Projects/Apps_Win/SchoolDatabase/trunk/extern/_prj/xlnt --check-stamp-file D:/Projects/Apps_Win/SchoolDatabase/trunk/extern/_prj/xlnt/source/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Developer\cmake\share\cmake-3.15\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\Developer\cmake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;C:\Developer\cmake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;C:\Developer\cmake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;D:\Projects\Apps_Win\SchoolDatabase\trunk\extern\xlnt\cmake\XlntConfig.cmake.in;D:\Projects\Apps_Win\SchoolDatabase\trunk\extern\xlnt\cmake\cmake_uninstall.cmake.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\Apps_Win\SchoolDatabase\trunk\extern\_prj\xlnt\source\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Projects/Apps_Win/SchoolDatabase/trunk/extern/xlnt/source/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-C:\Developer\cmake\bin\cmake.exe -SD:/Projects/Apps_Win/SchoolDatabase/trunk/extern/xlnt -BD:/Projects/Apps_Win/SchoolDatabase/trunk/extern/_prj/xlnt --check-stamp-file D:/Projects/Apps_Win/SchoolDatabase/trunk/extern/_prj/xlnt/source/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Developer\cmake\share\cmake-3.15\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\Developer\cmake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;C:\Developer\cmake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;C:\Developer\cmake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;D:\Projects\Apps_Win\SchoolDatabase\trunk\extern\xlnt\cmake\XlntConfig.cmake.in;D:\Projects\Apps_Win\SchoolDatabase\trunk\extern\xlnt\cmake\cmake_uninstall.cmake.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\Apps_Win\SchoolDatabase\trunk\extern\_prj\xlnt\source\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Projects/Apps_Win/SchoolDatabase/trunk/extern/xlnt/source/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-C:\Developer\cmake\bin\cmake.exe -SD:/Projects/Apps_Win/SchoolDatabase/trunk/extern/xlnt -BD:/Projects/Apps_Win/SchoolDatabase/trunk/extern/_prj/xlnt --check-stamp-file D:/Projects/Apps_Win/SchoolDatabase/trunk/extern/_prj/xlnt/source/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Developer\cmake\share\cmake-3.15\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\Developer\cmake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;C:\Developer\cmake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;C:\Developer\cmake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;D:\Projects\Apps_Win\SchoolDatabase\trunk\extern\xlnt\cmake\XlntConfig.cmake.in;D:\Projects\Apps_Win\SchoolDatabase\trunk\extern\xlnt\cmake\cmake_uninstall.cmake.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\Apps_Win\SchoolDatabase\trunk\extern\_prj\xlnt\source\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Projects/Apps_Win/SchoolDatabase/trunk/extern/xlnt/source/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-C:\Developer\cmake\bin\cmake.exe -SD:/Projects/Apps_Win/SchoolDatabase/trunk/extern/xlnt -BD:/Projects/Apps_Win/SchoolDatabase/trunk/extern/_prj/xlnt --check-stamp-file D:/Projects/Apps_Win/SchoolDatabase/trunk/extern/_prj/xlnt/source/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Developer\cmake\share\cmake-3.15\Modules\BasicConfigVersion-ExactVersion.cmake.in;C:\Developer\cmake\share\cmake-3.15\Modules\CMakePackageConfigHelpers.cmake;C:\Developer\cmake\share\cmake-3.15\Modules\GNUInstallDirs.cmake;C:\Developer\cmake\share\cmake-3.15\Modules\WriteBasicConfigVersionFile.cmake;D:\Projects\Apps_Win\SchoolDatabase\trunk\extern\xlnt\cmake\XlntConfig.cmake.in;D:\Projects\Apps_Win\SchoolDatabase\trunk\extern\xlnt\cmake\cmake_uninstall.cmake.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\Apps_Win\SchoolDatabase\trunk\extern\_prj\xlnt\source\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="D:\Projects\Apps_Win\SchoolDatabase\trunk\extern\xlnt\include\xlnt\xlnt.hpp" />
     <ClInclude Include="D:\Projects\Apps_Win\SchoolDatabase\trunk\extern\xlnt\include\xlnt\xlnt_config.hpp" />
     <ClInclude Include="D:\Projects\Apps_Win\SchoolDatabase\trunk\extern\xlnt\include\xlnt\cell\cell.hpp" />
