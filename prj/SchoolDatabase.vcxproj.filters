@@ -19,6 +19,12 @@
     <Filter Include="include\Dialog">
       <UniqueIdentifier>{835aa43d-92aa-40d2-9724-afa2f4a70585}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\Utils">
+      <UniqueIdentifier>{93b2e79b-69ad-460b-827c-baa4252dd4d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Utils">
+      <UniqueIdentifier>{5ceb7f4a-5438-4d8f-8169-44f6d51dfa77}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\resource\resource.h">
@@ -38,6 +44,9 @@
     </ClInclude>
     <ClInclude Include="..\source\Dialog\HomeDlg.h">
       <Filter>include\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Utils\Texts.h">
+      <Filter>include\Utils</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +73,9 @@
     </ClCompile>
     <ClCompile Include="..\source\Dialog\HomeDlg.cpp">
       <Filter>source\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Utils\Texts.cpp">
+      <Filter>source\Utils</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

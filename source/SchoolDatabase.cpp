@@ -6,6 +6,8 @@
 #include "framework.h"
 #include "SchoolDatabase.h"
 #include "Dialog/HomeDlg.h"
+#include "Utils/Texts.h"
+
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -71,11 +73,7 @@ BOOL SchoolDatabaseApp::InitInstance()
 	// such as the name of your company or organization
 	SetRegistryKey(_T("Local AppWizard-Generated Applications"));
 
-	xlnt::path file("../resource/texts/SDTexts.xls");
-	if (file.exists())
-	{
-		xlnt::workbook wb(file);
-	}
+	Texts::Parse("../resource/texts/SDTexts.xlsx");
 
 	CHomeDlg dlg;
 	m_pMainWnd = &dlg;

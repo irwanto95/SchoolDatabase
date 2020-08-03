@@ -11,5 +11,8 @@
 
 // add headers that you want to pre-compile here
 #include "framework.h"
+#include "mfupch.h"
+
+using namespace mufise;
 
 #endif //PCH_H
