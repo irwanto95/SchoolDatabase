@@ -17,9 +17,11 @@ public:
 	enum { IDD = IDD_HOME_DIALOG };
 #endif
 
-	protected:
+protected:
 	virtual void DoDataExchange(CDataExchange* pDX);	// DDX/DDV support
 
+private:
+	void LoadText();
 
 // Implementation
 protected:

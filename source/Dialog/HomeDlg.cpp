@@ -8,6 +8,8 @@
 #include "HomeDlg.h"
 #include "afxdialogex.h"
 
+#include "Utils/Texts.h"
+
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
@@ -61,6 +63,36 @@ void CHomeDlg::DoDataExchange(CDataExchange* pDX)
 	CDialogEx::DoDataExchange(pDX);
 }
 
+void CHomeDlg::LoadText()
+{
+	CFont font;
+	font.CreateFont(
+		12,                        // nHeight
+		0,                         // nWidth
+		0,                         // nEscapement
+		0,                         // nOrientation
+		FW_NORMAL,                 // nWeight
+		FALSE,                     // bItalic
+		FALSE,                     // bUnderline
+		0,                         // cStrikeOut
+		ANSI_CHARSET,              // nCharSet
+		OUT_DEFAULT_PRECIS,        // nOutPrecision
+		CLIP_DEFAULT_PRECIS,       // nClipPrecision
+		DEFAULT_QUALITY,           // nQuality
+		DEFAULT_PITCH | FF_SWISS,  // nPitchAndFamily
+		_T("Arial"));              // lpszFacename
+
+	GetDlgItem(IDC_TEXT_HOME_TITLE)->SetFont(&font);
+	GetDlgItem(IDC_TEXT_HOME_TITLE)->SetWindowTextW(Texts::GetStringL("STR_HOME_TITLE"));
+	GetDlgItem(IDC_TEXT_TITLE_SCHOOL_NAME)->SetWindowTextW(Texts::GetStringL("STR_SCHOOL_NAME"));
+	GetDlgItem(IDC_GROUP_MAINMENU)->SetWindowTextW(Texts::GetStringL("STR_MAIN_MENU"));
+	GetDlgItem(IDC_BTN_STUDENT_DB_MENU)->SetWindowTextW(Texts::GetStringL("STR_DB_STUDENT"));
+	GetDlgItem(IDC_BTN_CLASS_DB_MENU)->SetWindowTextW(Texts::GetStringL("STR_DB_CLASS"));
+	GetDlgItem(IDC_BTN_EMPLOYEE_DB_MENU)->SetWindowTextW(Texts::GetStringL("STR_DB_EMPLOYEE"));
+	GetDlgItem(IDC_BTN_COURSE_DB_MENU)->SetWindowTextW(Texts::GetStringL("STR_DB_COURSE"));
+	GetDlgItem(IDC_BTN_INVENTORY_DB_MENU)->SetWindowTextW(Texts::GetStringL("STR_DB_INVENTORY"));
+}
+
 BEGIN_MESSAGE_MAP(CHomeDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
@@ -100,24 +132,7 @@ BOOL CHomeDlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// Set small icon
 
 	// TODO: Add extra initialization here
-	CFont font;
-	font.CreateFont(
-		12,                        // nHeight
-		0,                         // nWidth
-		0,                         // nEscapement
-		0,                         // nOrientation
-		FW_NORMAL,                 // nWeight
-		FALSE,                     // bItalic
-		FALSE,                     // bUnderline
-		0,                         // cStrikeOut
-		ANSI_CHARSET,              // nCharSet
-		OUT_DEFAULT_PRECIS,        // nOutPrecision
-		CLIP_DEFAULT_PRECIS,       // nClipPrecision
-		DEFAULT_QUALITY,           // nQuality
-		DEFAULT_PITCH | FF_SWISS,  // nPitchAndFamily
-		_T("Arial"));              // lpszFacename
-
-	GetDlgItem(IDC_TEXT_TITLE)->SetFont(&font);
+	LoadText();
 
 	return TRUE;  // return TRUE  unless you set the focus to a control
 }

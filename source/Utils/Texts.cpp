@@ -46,7 +46,30 @@ void Texts::Parse(const char* filename)
 	}
 }
 
-std::string Texts::GetString(const std::string& ID)
+const std::string& Texts::GetString(const std::string& ID)
 {
-	return std::string();
+	if (s_keyMap.find(ID) != s_keyMap.end())
+	{
+		return s_keyMap[ID];
+	}
+	else
+	{
+		return "";
+	}
+}
+
+const char* Texts::GetStringC(const std::string& ID)
+{
+	return GetString(ID).c_str();
+}
+
+LPCTSTR Texts::GetStringL(const std::string& ID)
+{
+	const char* cc = GetString(ID).c_str();
+	const size_t sz = strlen(cc) + 1;
+ 	wchar_t* wc = new wchar_t[sz];
+	
+	mbstowcs(wc, cc, sz);
+
+	return wc;
 }

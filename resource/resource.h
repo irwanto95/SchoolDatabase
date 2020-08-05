@@ -7,7 +7,7 @@
 #define IDS_ABOUTBOX                    101
 #define IDD_HOME_DIALOG                 102
 #define IDR_MAINFRAME                   128
-#define IDC_TEXT_TITLE                  1000
+#define IDC_TEXT_HOME_TITLE             1000
 #define IDC_TEXT_TITLE_SCHOOL_NAME      1001
 #define IDC_BTN_STUDENT_DB_MENU         1042
 #define IDC_GROUP_MAINMENU              1043
