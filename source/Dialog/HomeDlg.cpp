@@ -3,9 +3,9 @@
 //
 
 #include "pch.h"
-#include "framework.h"
-#include "SchoolDatabase.h"
 #include "HomeDlg.h"
+#include "StudentDataDlg.h"
+
 #include "afxdialogex.h"
 
 #include "Utils/Texts.h"
@@ -97,6 +97,7 @@ BEGIN_MESSAGE_MAP(CHomeDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_BN_CLICKED(IDC_BTN_STUDENT_DB_MENU, &CHomeDlg::OnBnClickedBtnStudentDbMenu)
 END_MESSAGE_MAP()
 
 
@@ -125,6 +126,16 @@ BOOL CHomeDlg::OnInitDialog()
 			pSysMenu->AppendMenu(MF_STRING, IDM_ABOUTBOX, strAboutMenu);
 		}
 	}
+
+	CString appTitle, tmp;
+	ASSERT(tmp.LoadString(IDS_APP_NAME));
+
+	appTitle.Append(tmp);
+	appTitle.Append(L" - ver ");
+	ASSERT(tmp.LoadString(IDS_APP_VERSION));
+
+	appTitle.Append(tmp);
+	SetWindowText(appTitle);
 
 	// Set the icon for this dialog.  The framework does this automatically
 	//  when the application's main window is not a dialog
@@ -186,3 +197,10 @@ HCURSOR CHomeDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+
+void CHomeDlg::OnBnClickedBtnStudentDbMenu()
+{
+	CStudentDataDlg dlgStudentDB;
+	dlgStudentDB.DoModal();
+}

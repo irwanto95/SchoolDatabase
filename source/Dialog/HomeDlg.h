@@ -17,20 +17,22 @@ public:
 	enum { IDD = IDD_HOME_DIALOG };
 #endif
 
-protected:
-	virtual void DoDataExchange(CDataExchange* pDX);	// DDX/DDV support
-
-private:
-	void LoadText();
+	afx_msg void OnBnClickedBtnStudentDbMenu();
 
 // Implementation
 protected:
-	HICON m_hIcon;
-
 	// Generated message map functions
 	virtual BOOL OnInitDialog();
+	virtual void DoDataExchange(CDataExchange* pDX);	// DDX/DDV support
+	
 	afx_msg void OnSysCommand(UINT nID, LPARAM lParam);
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
+
+private:
+	void LoadText();
+
+protected:
+	HICON m_hIcon;
 };

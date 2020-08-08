@@ -25,6 +25,12 @@
     <Filter Include="source\Utils">
       <UniqueIdentifier>{5ceb7f4a-5438-4d8f-8169-44f6d51dfa77}</UniqueIdentifier>
     </Filter>
+    <Filter Include="source\Data">
+      <UniqueIdentifier>{59b963a9-9e9e-448a-80bf-870433e9fbcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Data">
+      <UniqueIdentifier>{a144a9a0-5ab5-44dc-a1aa-65f479d526f4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\resource\resource.h">
@@ -46,6 +52,21 @@
       <Filter>include\Dialog</Filter>
     </ClInclude>
     <ClInclude Include="..\source\Utils\Texts.h">
+      <Filter>include\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Dialog\StudentDataDlg.h">
+      <Filter>include\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Data\Student.h">
+      <Filter>include\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Data\Person.h">
+      <Filter>include\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Dialog\StudentRegisterDlg.h">
+      <Filter>include\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Utils\Utillity.h">
       <Filter>include\Utils</Filter>
     </ClInclude>
   </ItemGroup>
@@ -75,6 +96,21 @@
       <Filter>source\Dialog</Filter>
     </ClCompile>
     <ClCompile Include="..\source\Utils\Texts.cpp">
+      <Filter>source\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Dialog\StudentDataDlg.cpp">
+      <Filter>source\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Data\Student.cpp">
+      <Filter>source\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Data\Person.cpp">
+      <Filter>source\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Dialog\StudentRegisterDlg.cpp">
+      <Filter>source\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Utils\Utillity.cpp">
       <Filter>source\Utils</Filter>
     </ClCompile>
   </ItemGroup>

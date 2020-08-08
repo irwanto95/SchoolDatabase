@@ -21,11 +21,16 @@
   <ItemGroup>
     <ClInclude Include="..\resource\resource.h" />
     <ClInclude Include="..\resource\targetver.h" />
+    <ClInclude Include="..\source\Data\Person.h" />
+    <ClInclude Include="..\source\Data\Student.h" />
     <ClInclude Include="..\source\Dialog\HomeDlg.h" />
+    <ClInclude Include="..\source\Dialog\StudentDataDlg.h" />
+    <ClInclude Include="..\source\Dialog\StudentRegisterDlg.h" />
     <ClInclude Include="..\source\framework.h" />
     <ClInclude Include="..\source\pch.h" />
     <ClInclude Include="..\source\SchoolDatabase.h" />
     <ClInclude Include="..\source\Utils\Texts.h" />
+    <ClInclude Include="..\source\Utils\Utillity.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\resource\SchoolDatabase.rc" />
@@ -37,7 +42,11 @@
     <None Include="..\resource\res\SchoolDatabase.rc2" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\source\Data\Person.cpp" />
+    <ClCompile Include="..\source\Data\Student.cpp" />
     <ClCompile Include="..\source\Dialog\HomeDlg.cpp" />
+    <ClCompile Include="..\source\Dialog\StudentDataDlg.cpp" />
+    <ClCompile Include="..\source\Dialog\StudentRegisterDlg.cpp" />
     <ClCompile Include="..\source\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -46,6 +55,7 @@
     </ClCompile>
     <ClCompile Include="..\source\SchoolDatabase.cpp" />
     <ClCompile Include="..\source\Utils\Texts.cpp" />
+    <ClCompile Include="..\source\Utils\Utillity.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\extern\mufise\mfUtils\prj\mfUtils.vcxproj">

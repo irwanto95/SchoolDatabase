@@ -1,0 +1,22 @@
+Index: mfUtils/include/Core/types.h
+===================================================================
+--- mfUtils/include/Core/types.h	(revision 14)
++++ mfUtils/include/Core/types.h	(working copy)
+@@ -53,6 +53,17 @@
+ #define LISTL(x)	typedef std::list<x>
+ #define LISTD(x)	typedef std::deque<x>
+ 
++#define STRTOWCHAR_T(str)\
++const char* cc = str.c_str();\
++const size_t sz = strlen(cc) + 1;\
++wchar_t* wc = new wchar_t[sz];\
++mbstowcs(wc, cc, sz);\
++
++#define CSTRTOWCHAR_T(cstr)\
++const size_t sz = strlen(cstr) + 1;\
++wchar_t* wc = new wchar_t[sz];\
++mbstowcs(wc, cstr, sz);\
++
+ }
+ 
+ #endif // !_MF_TYPES_H

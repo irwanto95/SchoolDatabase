@@ -65,11 +65,5 @@ const char* Texts::GetStringC(const std::string& ID)
 
 LPCTSTR Texts::GetStringL(const std::string& ID)
 {
-	const char* cc = GetString(ID).c_str();
-	const size_t sz = strlen(cc) + 1;
- 	wchar_t* wc = new wchar_t[sz];
-	
-	mbstowcs(wc, cc, sz);
-
-	return wc;
+	return Utillity::ToLPCTSTR(GetString(ID));
 }

@@ -11,7 +11,10 @@
 
 // add headers that you want to pre-compile here
 #include "framework.h"
+#include "resource.h"
 #include "mfupch.h"
+
+#include "Utils/Utillity.h"
 
 using namespace mufise;
 
